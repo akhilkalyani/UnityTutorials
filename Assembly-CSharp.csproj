@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7FD53FA3-477F-FBCF-CFCD-0157ECBEE08B}</ProjectGuid>
+    <ProjectGuid>{F825F8CA-84A3-0445-C75B-6E674B78B1EA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,6 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2019.3.0f6</UnityVersion>
@@ -65,6 +66,11 @@
   <ItemGroup>
     <Compile Include="Assets\CardSwipeAndSnap\Scripts\CardLogic.cs" />
     <Compile Include="Assets\CardSwipeAndSnap\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Lerping\Scripts\LerpCoroutines.cs" />
+    <Compile Include="Assets\Lerping\Scripts\ScoreLerp.cs" />
+    <Compile Include="Assets\RummyCardGame\Scripts\CardManager.cs" />
+    <Compile Include="Assets\RummyCardGame\Scripts\CardView.cs" />
+    <Compile Include="Assets\RummyCardGame\Scripts\InputManager.cs" />
     <Compile Include="Assets\SlotMachine\Scripts\Reel.cs" />
     <Compile Include="Assets\SlotMachine\Scripts\SlotController.cs" />
     <Compile Include="Assets\SlotMachine\Scripts\SlotSpinner.cs" />
@@ -89,31 +95,31 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Unity projects/2019.3.0f6/slot machine/slot-machine/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Unity projects/2019.3.0f6/UnityTutorials/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity Installation/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

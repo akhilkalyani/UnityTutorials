@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/SlotMachine/Scene/SlotMachineFramework.unity
+- path: Assets/Lerping/Scenes/LerpGame.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
