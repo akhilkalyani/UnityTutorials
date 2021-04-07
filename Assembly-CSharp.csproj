@@ -64,6 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Audio Visualizer in unity\MusicSyncVisualizer\AudioSpectrum.cs" />
+    <Compile Include="Assets\Audio Visualizer in unity\MusicSyncVisualizer\AudioSyncColor.cs" />
+    <Compile Include="Assets\Audio Visualizer in unity\MusicSyncVisualizer\AudioSyncScale.cs" />
+    <Compile Include="Assets\Audio Visualizer in unity\MusicSyncVisualizer\AudioSyncer.cs" />
+    <Compile Include="Assets\Audio Visualizer in unity\MusicSyncVisualizer\Wave.cs" />
     <Compile Include="Assets\C# Array functions\ArrayTutorials.cs" />
     <Compile Include="Assets\CardSwipeAndSnap\Scripts\CardLogic.cs" />
     <Compile Include="Assets\CardSwipeAndSnap\Scripts\GameLogic.cs" />

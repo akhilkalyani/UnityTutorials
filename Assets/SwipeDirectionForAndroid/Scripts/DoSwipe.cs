@@ -9,9 +9,9 @@ public class DoSwipe : MonoBehaviour
     [SerializeField] RectTransform down;
     [SerializeField] RectTransform right;
     [SerializeField] RectTransform left;
-    Vector2 currentPos;
-    Vector2 finalPos;
-    int count = 0;
+    private Vector2 currentPos;
+    private Vector2 finalPos;
+    [SerializeField]private float speed;
     private void Awake()
     {
         currentPos = GetComponent<RectTransform>().position;
@@ -50,7 +50,7 @@ public class DoSwipe : MonoBehaviour
         float t = 0;
         while(t<=1)
         {
-            t += Time.deltaTime;
+            t += Time.deltaTime*speed;
             GetComponent<RectTransform>().position = Vector3.Lerp(currentPos,endPos,t);
             yield return null;
         }
