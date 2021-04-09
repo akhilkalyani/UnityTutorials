@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Lerping/Scenes/LerpGame.unity
+- path: Assets/SwipeDirectionForAndroid/Scenes/SwipeMechanism.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
