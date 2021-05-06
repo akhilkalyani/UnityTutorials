@@ -104,7 +104,8 @@
     <Compile Include="Assets\UI Animation\Scripts\OptionClick.cs" />
     <Compile Include="Assets\UI Animation\Scripts\UIAnimation.cs" />
     <Compile Include="Assets\loading\Load.cs" />
-    <Compile Include="Assets\swipe controlled ScrollRect with items snapping\ScrollSnapRect_Scripts\ScrollSnapRect.cs" />
+    <Compile Include="Assets\swipe controlled ScrollRect with items snapping\SSR\ScrollSnapRect.cs" />
+    <Compile Include="Assets\swipe controlled ScrollRect with items snapping\Scripts\Controller.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
