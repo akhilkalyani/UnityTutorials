@@ -27,10 +27,10 @@ public class ScrollSnapRect : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
     public Sprite selectedPage;
     [Tooltip("Container with page images (optional)")]
     public Transform pageSelectionIcons;
-
+    
     // fast swipes should be fast and short. If too long, then it is not fast swipe
     private int _fastSwipeThresholdMaxLimit;
-
+    private bool isCurrentPage = false;
     private ScrollRect _scrollRectComponent;
     private RectTransform _scrollRectRect;
     private RectTransform _container;
@@ -205,6 +205,7 @@ public class ScrollSnapRect : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
 
     //------------------------------------------------------------------------
     private void SetPageSelection(int aPageIndex) {
+   
         // nothing to change
         if (_previousPageSelectionIndex == aPageIndex) {
             return;
@@ -219,7 +220,7 @@ public class ScrollSnapRect : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
         // select new
         _pageSelectionImages[aPageIndex].sprite = selectedPage;
         _pageSelectionImages[aPageIndex].SetNativeSize();
-
+        Debug.Log("current page index:-" + aPageIndex);
         _previousPageSelectionIndex = aPageIndex;
     }
 
